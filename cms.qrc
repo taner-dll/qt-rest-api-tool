@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/">
+        <file>style/Adaptic.qss</file>
+        <file>style/Combinear.qss</file>
+        <file>style/SyNet.qss</file>
+        <file>style/Chatbee.qss</file>
+        <file>style/Modern.qss</file>
+        <file>images/drupal.png</file>
+        <file>images/gitlab.png</file>
+        <file>images/api.png</file>
+        <file>images/compare.png</file>
+        <file>images/run.png</file>
+        <file>images/ddev.png</file>
+        <file>scripts/setup_cms.sh</file>
+        <file>images/jenkins.png</file>
+    </qresource>
+</RCC>

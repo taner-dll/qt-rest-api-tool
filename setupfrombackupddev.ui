@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SetupFromBackupDdev</class>
+ <widget class="QDialog" name="SetupFromBackupDdev">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>420</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>621</width>
+     <height>391</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_3">
+    <property name="horizontalSpacing">
+     <number>4</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>4</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="selectTarball_3">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Tarball </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="tarballPath_3"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="selectSQLdumpFile_3">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>SQL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="sqlDumpPath_3"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="changeCMSbackupSetupPath_3">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Path</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="cmsBackupSetupPath_3">
+      <property name="text">
+       <string>/home/tnrdll/Ddev</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="folderName_3">
+      <property name="placeholderText">
+       <string>Enter directory name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string> PHP v:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QComboBox" name="comboBoxPHP">
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="currentText">
+       <string>7.3</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>7.3</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>7.4</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>8.0</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>8.1</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="setupFromCMSBackup_3">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Run</string>
+      </property>
+      <property name="icon">
+       <iconset resource="cms.qrc">
+        <normaloff>:/images/run.png</normaloff>:/images/run.png</iconset>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QTextBrowser" name="textBrowser_3"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="cms.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>942</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
+  <property name="windowTitle">
+   <string>CMS - Tools</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="0">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,2,2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Kurulumlar</string>
+          </property>
+          <widget class="QWidget" name="verticalLayoutWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>29</y>
+             <width>281</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_4" stretch="2,2,2,0">
+            <item>
+             <widget class="QPushButton" name="setupFromBackupButton">
+              <property name="minimumSize">
+               <size>
+                <width>241</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Jenkins ile indirilen CMS yedeği ve SQL dump kurulumunu gerçekleştirir.</string>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }
+
+     </string>
+              </property>
+              <property name="text">
+               <string>Backup Kurulumu
+(LAMP)</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/jenkins.png</normaloff>:/images/jenkins.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setupFromGitlabButton">
+              <property name="minimumSize">
+               <size>
+                <width>241</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }</string>
+              </property>
+              <property name="text">
+               <string>Gitlab Deposundan
+Kurulum  (Yeni DB)</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/drupal.png</normaloff>:/images/drupal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setupFromBackupDdev">
+              <property name="minimumSize">
+               <size>
+                <width>241</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }</string>
+              </property>
+              <property name="text">
+               <string>Backup Kurulumu
+(DDEV)</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/ddev.png</normaloff>:/images/ddev.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>6</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Repository İşlemleri</string>
+          </property>
+          <widget class="QWidget" name="verticalLayoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>29</y>
+             <width>281</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QPushButton" name="updateSingleRepo">
+                <property name="minimumSize">
+                 <size>
+                  <width>241</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="toolTip">
+                 <string>Jenkins ile indirilen CMS yedeği ve SQL dump kurulumunu gerçekleştirir.</string>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">     QPushButton {
+			padding: 10px;
+     }
+
+     </string>
+                </property>
+                <property name="text">
+                 <string>Repo Güncelleme</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="cms.qrc">
+                  <normaloff>:/images/gitlab.png</normaloff>:/images/gitlab.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>64</width>
+                  <height>64</height>
+                 </size>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="setupFromBackupButton_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>241</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="cursor">
+                 <cursorShape>PointingHandCursor</cursorShape>
+                </property>
+                <property name="toolTip">
+                 <string>Jenkins ile indirilen CMS yedeği ve SQL dump kurulumunu gerçekleştirir.</string>
+                </property>
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">     QPushButton {
+			padding: 10px;
+     }
+
+     </string>
+                </property>
+                <property name="text">
+                 <string>Toplu
+Repo Güncelleme</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="cms.qrc">
+                  <normaloff>:/images/gitlab.png</normaloff>:/images/gitlab.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>64</width>
+                  <height>64</height>
+                 </size>
+                </property>
+                <property name="flat">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>CMS - API Yönetimi</string>
+          </property>
+          <widget class="QWidget" name="verticalLayoutWidget_3">
+           <property name="geometry">
+            <rect>
+             <x>9</x>
+             <y>30</y>
+             <width>281</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,2,2,0,2">
+            <item>
+             <widget class="QPushButton" name="cmsManagementButton">
+              <property name="minimumSize">
+               <size>
+                <width>241</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>Jenkins ile indirilen CMS yedeği ve SQL dump kurulumunu gerçekleştirir.</string>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }
+
+     </string>
+              </property>
+              <property name="text">
+               <string>CMS Yönetimi</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/drupal.png</normaloff>:/images/drupal.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="apiManagementButton">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }</string>
+              </property>
+              <property name="text">
+               <string>Uç Noktalar</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/api.png</normaloff>:/images/api.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="apiCompareButton">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }</string>
+              </property>
+              <property name="text">
+               <string>API Endpoint
+Karşılaştırma</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/compare.png</normaloff>:/images/compare.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="apiCompareBulkButton">
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">     QPushButton {
+			padding: 10px;
+     }</string>
+              </property>
+              <property name="text">
+               <string>Toplu
+API Karşılaştırma</string>
+              </property>
+              <property name="icon">
+               <iconset resource="cms.qrc">
+                <normaloff>:/images/compare.png</normaloff>:/images/compare.png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>64</width>
+                <height>64</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="cms.qrc"/>
+ </resources>
+ <connections/>
+</ui>
