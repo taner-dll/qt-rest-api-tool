@@ -54,7 +54,7 @@ void DBManager::closeConnection(){
 void DBManager::generateDynamicTableView(const QSqlQuery &sql_query_text, QTableView *tv){
 
     QSqlQueryModel *model = new QSqlQueryModel();
-    model->setQuery(sql_query_text);
+    model->setQuery(std::move(sql_query_text));
 
     //sorting enabled
     QSortFilterProxyModel *proxy_model = new QSortFilterProxyModel();
